@@ -10,3 +10,13 @@ Extract data from PDF invoices
                         3. find_date(),
                         4. find_amount()
     config.json : Has path to Source and Destination.
+
+# Steps of execution
+    1. The files are extracte from the zip file given
+    2. The zip file contains 2 folder one for windows user and othr for Mac users. The given code is working 
+       for the Windows users.
+    3. To extract the data from the set of pdf file the invoive2textdata.py file is executed by the command: 
+                    
+                                python invoive2textdata.py config.json
+     
+            
