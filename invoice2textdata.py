@@ -1,7 +1,7 @@
 import json
 import os
 import sys
-import invoice2txt
+import functions
 
 def main():
 	path=sys.argv[1]
@@ -9,7 +9,7 @@ def main():
 		config=json.load(f)
 	
 	if os.path.exists(config['src']):
-		invoice2txt.convert(config['src'], config['des'])
+		functions.convert(config['src'], config['des'])
 
 if __name__ == '__main__':
 	if len(sys.argv)==1:
