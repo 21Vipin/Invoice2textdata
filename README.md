@@ -7,9 +7,15 @@ Convert from PDF files to this:
         { File Name:  2137.pdf Invoice Number:  INV002137 Invoice Date:  22-Jun-2016 Due Amount: Rs  45.76 }
         { File Name:  2138.pdf Invoice Number:  INV002138 Invoice Date:  22-Jun-2016 Due Amount: Rs  45.76 }
 
-# Execution
-1. Update the config.json file and set the path accordingly.
-2. To extract the data from the set of pdf files, the invoive2textdata.py file is executed with the help of command: 
+# Prerequisite
+Update the config.json file and set the path as shown bellow:
+        
+        "src" : "Path where the zip file will be exctracted.",
+        "des" : "path to the text file in which the complete data of pdf is exctracted.",
+        "zip" : "complete path to the where the zip file is."
+
+# Execution     
+To extract the data from the set of pdf files, the invoive2textdata.py file is executed with the help of command: 
 
                                 python invoive2textdata.py config.json  
 
