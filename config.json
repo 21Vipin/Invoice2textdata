@@ -1,5 +1,5 @@
 {
-	"_comment":"des : The convert.txt is the file in which the complete pdf data is converted to text and dumped"
-	"src":"C:/Users/Vipin Makde/Desktop/kredx",
+	"_comment" : "des --> The convert.txt is the file in which the complete pdf data is converted to text and dumped",
+	"src" : "C:/Users/Vipin Makde/Desktop/kredx",
      	"des" : "C:/Users/Vipin Makde/Desktop/kredx/convert.txt"
 }
