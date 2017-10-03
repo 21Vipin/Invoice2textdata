@@ -2,6 +2,7 @@
 PDFs are extremely difficult to scrape. Converting them to text files can make extracting their data significantly easier. I have focused on the widely used pdfmine package from python. 
 
 Go from PDF files to this:
+
         { File Name:  2112.pdf Invoice Number:  INV002112 Invoice Date:  13-Jun-2016 Due Amount: Rs  1,661.09 }
         { File Name:  2137.pdf Invoice Number:  INV002137 Invoice Date:  22-Jun-2016 Due Amount: Rs  45.76 }
         { File Name:  2138.pdf Invoice Number:  INV002138 Invoice Date:  22-Jun-2016 Due Amount: Rs  45.76 }
