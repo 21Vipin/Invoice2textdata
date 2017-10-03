@@ -8,7 +8,8 @@ Convert from PDF files to this:
         { File Name:  2138.pdf Invoice Number:  INV002138 Invoice Date:  22-Jun-2016 Due Amount: Rs  45.76 }
 
 # Execution
-To extract the data from the set of pdf files, the invoive2textdata.py file is executed with the help of command: 
+1. Update the config.json file and set the path accordingly.
+2. To extract the data from the set of pdf files, the invoive2textdata.py file is executed with the help of command: 
 
                                 python invoive2textdata.py config.json  
 
