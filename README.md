@@ -1,16 +1,14 @@
 # Invoice2textdata
-PDFs are extremely difficult to scrape. Converting them to text files can make extracting their data significantly easier. I have focused on the widely used pdfmine package from python. 
+PDFs are extremely difficult to scrape. Converting them to text files can make extracting their data significantly easier. I have focused on the widely used pdfminer package from python. 
 
-Go from PDF files to this:
+Convert from PDF files to this:
 
         { File Name:  2112.pdf Invoice Number:  INV002112 Invoice Date:  13-Jun-2016 Due Amount: Rs  1,661.09 }
         { File Name:  2137.pdf Invoice Number:  INV002137 Invoice Date:  22-Jun-2016 Due Amount: Rs  45.76 }
         { File Name:  2138.pdf Invoice Number:  INV002138 Invoice Date:  22-Jun-2016 Due Amount: Rs  45.76 }
 
-# Steps of execution
-1. The files are extracte from the zip file given
-2. The zip file contains 2 folder one for windows user and othr for Mac users. The given code is working for the Windows users.
-3. To extract the data from the set of pdf file the invoive2textdata.py file is executed by the command: 
+# Execution
+To extract the data from the set of pdf files, the invoive2textdata.py file is executed with the help of command: 
 
                                 python invoive2textdata.py config.json  
 
