@@ -13,6 +13,6 @@ def main():
 
 if __name__ == '__main__':
 	if len(sys.argv)==1:
-		print("Please include the config.json file path like this - python invoice.py config.json")
+		print("Please include the config.json file path like this - python invoice2textdata.py config.json")
 	else:
 		main()
