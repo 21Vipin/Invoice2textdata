@@ -7,8 +7,8 @@ from pdfminer.converter import TextConverter
 
 def convert(src, des):
     for root, dirs, files in os.walk(src):
-        try:
-            for file in files:
+        for file in files:
+            try:
                 if file.endswith(".pdf"):
                     if not file.startswith("._"):
                         outfile = des
@@ -34,8 +34,9 @@ def convert(src, des):
                         date= find_date(test)
                         due_amount = find_amount(test)
                         print("{ File Name: ", file, "Invoice Number: ", invoice, "Invoice Date: ", date, "Due Amount: Rs ", due_amount,"}")
-        except:
-            print('An error occured.')
+            except:
+                print('An error occured.')
+            
 
                     
 def find_invoice_number(str):
@@ -45,17 +46,15 @@ def find_invoice_number(str):
 		index = str_lower.find('invoice', index)
 		if index == -1:
 			break
-		if "no" in str_lower[index + 7: index + 10] or "number" in str_lower[index + 7: index + 14]:			#randomly printing 40 characters starting from invoice
-			str = str[index + 10: index + 30]								#stripping string to less characters
-			
-			#check for actual invoice number
-			if "INV" in str:												#invoice with INV
+		if "no" in str_lower[index + 7: index + 10] or "number" in str_lower[index + 7: index + 14]:
+			str = str[index + 10: index + 30]						
+			if "INV" in str:												
 				start = str.find("INV") + 3
 				invoice = 'INV'
 			else:
 				for pos,char in enumerate(str):
 					if char.isdigit():
-						start = pos											#starting index for invoice
+						start = pos											
 						invoice = ''
 						break
 			
@@ -63,12 +62,11 @@ def find_invoice_number(str):
 				if char in string.punctuation:
 					continue
 				if char.isalpha():
-					end = pos												#ending index for invoice
-					break
+					end = pos																	break
 			invoice = invoice + str[start: start + end]
 			return invoice
 			
-		index += 7 # +7 because len('invoice') == 7							#to check for all 'invoice' keywords
+		index += 7 							
 
 def find_date(str):
 	str_lower = str.lower()
